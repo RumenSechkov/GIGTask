@@ -1,0 +1,192 @@
+body, main, nav, footer, section, div, span, form, table {
+    margin: 0;
+    padding: 0;
+}
+
+#view-contacts, #edit-contacts, #contact-template, #country-template, #form-delete-btn {
+    display: none;
+}
+
+input:focus, select:focus {
+    outline: 0;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: Roboto, sans-serif;
+}
+
+nav, footer {
+    position: fixed;
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(90deg, #50d6d6, #40f4a2);
+    z-index: 1;
+}
+
+nav {
+    top: 0;
+    box-shadow: 0 0.1vw 0.4vw 0 rgba(0, 0, 0, 0.5);
+}
+
+nav img {
+    position: absolute;
+    height: 3.3em;
+    margin: 0.7em 3%;
+}
+
+nav > div {
+    position: relative;
+    display: inline-block;
+    margin: 0.7em 20%;
+    width: 60%;
+    text-align: center;
+}
+
+nav > input {
+    position: inherit;
+    top: 1.88em;
+    right: 3%;
+    height: 3em;
+    width: 8em;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-weight: 900;
+    background-color: transparent;
+}
+
+nav > div > span {
+    display: block;
+    margin-bottom: 0.1em;
+    font-size: 2em;
+    line-height: 0.8em;
+    font-weight: 900;
+}
+
+.fa-search {
+    margin-right: 0.3em;
+}
+
+nav > div > input {
+    height: 1.8em;
+    width: 80%;
+    padding-left: 0.7em;
+    border: 1px solid #ffffff;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+section {
+    position: absolute;
+    top: 4.8em;
+    width: 100%;
+    overflow: auto;
+}
+
+table {
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+th, td {
+    padding: 0.6em 0.2em;
+    text-align: left;
+}
+
+thead > tr {
+    position: fixed;
+    border-bottom: 1px solid #000000;
+    background-color: #fafafa;
+}
+
+thead > tr th {
+    display: inline-block;
+    margin: auto;
+}
+
+tbody tr:hover{
+    background-color: #ffffff;
+}
+
+tbody:before {
+    content: "-";
+    display: block;
+    line-height: 3em;
+    color: transparent;
+}
+
+th > i.fa {
+    visibility: hidden;
+    margin-right: 3px;
+}
+
+form {
+    width: 60%;
+    margin: 5em auto;
+}
+
+form > div {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+form input:nth-child(-n+3) {
+    height: 3em;
+    width: 100%;
+    margin: 0.6em 0;
+    padding-left: 0.7em;
+    border: 1px solid #ffffff;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+form input:nth-child(n+4) {
+    height: 3em;
+    width: 8em;
+    margin: 0.6em 2%;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-weight: 900;
+    background-color: transparent;
+}
+
+form select {
+    height: 3em;
+    width: 100%;
+    margin: 0.6em 0;
+    padding-left: 0.7em;
+    border: 1px solid #ffffff;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+footer {
+    bottom: 0;
+    height: 2.6em;
+    box-shadow: 0 0 4px 0 #222222;
+    font-size: 0.6em;
+    text-align: right;
+}
+
+footer > span {
+    position: absolute;
+    bottom: 0.7em;
+    right: 0.4em;
+}
+
+#asc > i.fa, #desc > i.fa {
+    visibility: visible;
+    margin-left: 3px;
+}
+
+#error {
+    visibility: hidden;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #c70039;
+}
+
+.no-contacts {
+    text-align: center;
+}
