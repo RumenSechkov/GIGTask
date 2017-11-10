@@ -8,7 +8,6 @@ $.extend(AddressBook, {
                     $('thead th').each(function (index, col) {
                         $(col).css('width', $('tbody tr:nth-child(2) td').eq(index).width());
                     })
-
                 });
 
                 var nav = $('nav').height();

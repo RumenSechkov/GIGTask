@@ -1,14 +1,13 @@
 {
-  "name": "gig-address-book-task",
-  "version": "1.0.0",
+  "name": "gig-address-book",
+  "version": "1.0.4",
   "description": "",
   "main": "app.js",
-  "dependencies": {
-    "country-list": "^1.1.0",
-    "express": "^4.16.2"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
+    "install": "npm install express ./",
+    "postinstall": "npm install country-list ./",
     "start": "node app.js"
   },
   "author": "",

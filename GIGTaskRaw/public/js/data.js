@@ -17,6 +17,7 @@ $.extend(AddressBook, {
             // By using loadCountries check the app loads countries list only on page load, not switching views for process optimization.
             return new Promise(function (resolve) {
                 if (AddressBook.Config.Edit.loadCountries) {
+                    // It can be made by simple export/require of countries variable but this way the app can be configured to use outside server.
                     var xmlhttp = new XMLHttpRequest();
                     xmlhttp.onreadystatechange = function () {
                         if (this.readyState === 4 && this.status === 200) {
