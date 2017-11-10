@@ -4,7 +4,11 @@
 This is a Single Page Application - Address Book with basic functionality to store, view, search, order, edit or delete contacts.
 
 ### Package Install And Start
-npm start
+* If downloaded through Git:
+    - npm install
+    - npm start
+* If installed as npm package:
+    - npm start
 
 ### Functionality
 1. First view where all contacts are listed:
