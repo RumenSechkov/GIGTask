@@ -4,10 +4,10 @@
 This is a Single Page Application - Address Book with basic functionality to store, view, search, order, edit or delete contacts.
 
 ### Package Install And Start
-* If downloaded through Git:
+* If cloned from Git, go to ./GIGTask/GIGTaskRaw and execute:
     - npm install
     - npm start
-* If installed as npm package:
+* If installed as npm package, go to ./node_module/ and execute:
     - npm start
 
 ### Functionality
